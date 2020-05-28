@@ -20,7 +20,7 @@ require 'faker'
 Email.all.destroy_all
 
 10.times do
-  Email.create(object: Faker::Book.title, body: Faker::Lorem.paragraph(15), read: false)
+  Email.create(object: Faker::Book.title, body: Faker::ChuckNorris.fact, read: false)
 end
 
 
